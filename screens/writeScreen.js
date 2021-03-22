@@ -27,12 +27,11 @@ export default class WriteStoryScreen extends React.Component {
             author: '',
             storyText: ''
         })
-        ToastAndroid.show('STORY SUBMITTED', ToastAndroid.SHORT)
     }
 
     render(){
         return(
-            <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
+            <View style={styles.container} behavior="padding" enabled>
                 <Header 
                     backgroundColor = {'blue'}
                     centerComponent = {{
@@ -82,7 +81,7 @@ export default class WriteStoryScreen extends React.Component {
                     >
                     <Text style={styles.buttonText}>SUBMIT STORY</Text>
                 </TouchableOpacity>            
-            </KeyboardAvoidingView>
+            </View>
         );
     }
 }
